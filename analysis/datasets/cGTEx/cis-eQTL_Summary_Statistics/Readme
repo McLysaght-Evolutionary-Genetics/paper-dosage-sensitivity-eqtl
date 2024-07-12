@@ -1,0 +1,28 @@
+################README################################
+#Author Shuli Liu 06/07/2021 shuliliu1991@cau.edu.cn
+######################################################
+
+There're two files for each tissue.
+
+1). *.permutations.2rd.txt.gz
+columns are:
+
+1. Gene ID. 
+2. Number of variants tested in cis for this gene.
+3. MLE of the shape1 parameter of the beta distribution.
+4. MLE of the shape2 parameter of the beta distribution.
+5. Dummy.
+6. ID of the best variant found for the gene (with the smallest p-value)
+7. Distance between the gene -variant pair.
+8. The nominal p-value of association the quantifies how significant from 0, the regression coeeficient is
+9. The slope associated with the nominal p-value of association
+10. A first permutation p-value directly obtained from the permutations with the direct method. This is basically a corrected version of the nominal p-value that accounts for the fact that multiple variants are tested per gene.
+11. A second permutation p-value obtained via beta approximation. Advice to use this one in any downstream analysis.
+
+2) *.nominals.txt.gz
+
+1. Gene ID.
+2. ID of the tested variant.
+3. Distance between the variant and the gene in bp.
+4. The nominal p-value of association.
+5. The slope associated with the nominal p-value of association.
