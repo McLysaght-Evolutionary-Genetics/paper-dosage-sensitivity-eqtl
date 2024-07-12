@@ -32,17 +32,16 @@ R dependancies:
 
 ### Important files to note
 
-```
-.
-├── README.md
-├── figures/ - directory containing figures for manuscript
-└── analysis/
-    ├── datasets/ - directory containing datasets used in analysis
-    ├── outputFiles/ - directory containing output files from analysis notebooks
-    └── notebooks/
-        └── 01-eQTLImportAndCorrect.ipynb
-        	GTExExpressedAndTestedGenes.python.ipynb
-```
+* `analysis/`
+  * `notebooks/`
+    * `prepareData`
+      * `eQTLImportAndCorrect.py3.ipynb` - Import GTEx v7 eQTL data into MySQL notebook and correct for multiple testing
+      * `GTExExpressedAndTestedGenes.python.ipynb` - Identify genes expressed and tested for eQTLs in GTEx v7
+      * `HumanOhnologsSSDsSingletons.py3.ipynb` - Identify human ohnologs, singletons, and SSDs
+      * `HumanCNVRGenes.py3.ipynb` - Identify human genes in Zarrei et al.
+      * `ExACpLIScore.py3.ipynb` - ExAC genes with high and low pLI scores
+      * `eQTLsBroadTissueBreadth.py3.ipynb` - Identify broad tissue breadth eQTLs
+      * `countSNPsTestedPerGene.py3.ipynb` - Count number of SNPs tested per gene
 
 ### Citation
 
